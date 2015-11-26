@@ -11,3 +11,5 @@ enterprise database migration or simply to replicate some Oracle data
 into a PostgreSQL database. It is really easy to used and doesn't need
 any Oracle database knowledge than providing the parameters needed to
 connect to the Oracle database.
+
+##THIS IS A PROJECT JUST FOR TEST!!!
