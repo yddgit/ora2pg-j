@@ -1,7 +1,10 @@
-The oracle database driver can not found in maven repository.
-So add it to your repository manually from "lib" directory.
+The oracle database driver can not found in maven repository. So add it to your repository manually.
 
-Add this two jar files in lib directory to your local repository:
+1. Download the oracle database jdbc driver.
 
-  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc5 -Dversion=11.2.0 -Dpackaging=jar -Dfile=ojdbc5.jar
-  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar -Dfile=ojdbc6.jar
+http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
+
+2. Add the downloaded jar file to you local repository.
+
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc5 -Dversion=11.2.0 -Dpackaging=jar -Dfile=ojdbc5.jar
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar -Dfile=ojdbc6.jar
