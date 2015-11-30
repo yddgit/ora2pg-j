@@ -15,13 +15,13 @@ import net.darold.ora2pg.config.Config;
  */
 public class ShowVerAction extends BaseAction {
 
-    private static final Logger logger = Logger.getLogger(ShowVerAction.class);
+	private static final Logger logger = Logger.getLogger(ShowVerAction.class);
 
-    @Override
-    public boolean process(Config config) {
-	logger.info("Show version: Ora2Pg v" + Config.VERSION);
-	System.out.println("Ora2Pg v" + Config.VERSION);
-	return true;
-    }
+	@Override
+	public boolean process(Config config) {
+		logger.info("Show version: Ora2Pg v" + Config.VERSION);
+		System.out.println("Ora2Pg v" + Config.VERSION);
+		return true;
+	}
 
 }

@@ -14,10 +14,10 @@ import net.darold.ora2pg.config.ConfigManager;
  */
 public class HelpAction extends BaseAction {
 
-    @Override
-    public boolean process(Config config) {
-	ConfigManager.help();
-	return true;
-    }
+	@Override
+	public boolean process(Config config) {
+		ConfigManager.help();
+		return true;
+	}
 
 }

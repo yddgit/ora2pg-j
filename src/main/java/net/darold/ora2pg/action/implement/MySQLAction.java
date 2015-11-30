@@ -16,15 +16,15 @@ import net.darold.ora2pg.config.Config.SchemaType;
  */
 public class MySQLAction extends BaseAction {
 
-    private static final Logger logger = Logger.getLogger(MySQLAction.class);
+	private static final Logger logger = Logger.getLogger(MySQLAction.class);
 
-    @Override
-    public boolean process(Config config) {
-	logger.info("Source database is mysql.");
-	config.setSchemaArray(config.getMysqlSchemaArray());
-	config.setSourcesArray(config.getMysqlSourcesArray());
-	config.setExternalArray(new SchemaType[] {});
-	return true;
-    }
+	@Override
+	public boolean process(Config config) {
+		logger.info("Source database is mysql.");
+		config.setSchemaArray(config.getMysqlSchemaArray());
+		config.setSourcesArray(config.getMysqlSourcesArray());
+		config.setExternalArray(new SchemaType[] {});
+		return true;
+	}
 
 }
