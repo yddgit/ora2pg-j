@@ -9,18 +9,18 @@ import net.darold.ora2pg.config.Config;
  *
  */
 public interface Ora2PgAction {
-    /**
-     * Process the action
-     * 
-     * @param config
-     *            User options
-     * 
-     * @return if success return true, otherwise return false
-     */
-    public boolean process(Config config);
+	/**
+	 * Process the action
+	 * 
+	 * @param config
+	 *            User options
+	 * 
+	 * @return if success return true, otherwise return false
+	 */
+	public boolean process(Config config);
 
-    /**
-     * Print the usage information
-     */
-    public void usage();
+	/**
+	 * Print the usage information
+	 */
+	public void usage();
 }

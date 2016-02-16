@@ -14,27 +14,27 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Ora2PgOption {
-    /** short representation of the option */
-    public String opt() default "";
+	/** short representation of the option */
+	public String opt() default "";
 
-    /** the long name of the Option */
-    public String longOpt();
+	/** the long name of the Option */
+	public String longOpt();
 
-    /** specifies whether the Option takes an argument or not */
-    public boolean hasArg();
+	/** specifies whether the Option takes an argument or not */
+	public boolean hasArg();
 
-    /** Sets whether the Option can have an optional argument. */
-    public boolean optionalArg() default false;
+	/** Sets whether the Option can have an optional argument. */
+	public boolean optionalArg() default false;
 
-    /** the display name for the argument value */
-    public String argName() default "";
+	/** the display name for the argument value */
+	public String argName() default "";
 
-    /** the description of the option */
-    public String desc() default "";
+	/** the description of the option */
+	public String desc() default "";
 
-    /** the type of the Option */
-    public Class<?> type() default Object.class;
+	/** the type of the Option */
+	public Class<?> type() default Object.class;
 
-    /** the default value */
-    public String defaultValue() default "";
+	/** the default value */
+	public String defaultValue() default "";
 }

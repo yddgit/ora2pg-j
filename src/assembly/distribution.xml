@@ -32,7 +32,7 @@
 		<dependencySet>
 			<useProjectArtifact>false</useProjectArtifact>
 			<outputDirectory>${dependencies.dir}</outputDirectory>
-			<unpack>false</unpack>
+			<unpack>false</unpack><!-- Do not unpack the dependency jar -->
 		</dependencySet>
 	</dependencySets>
 </assembly>
