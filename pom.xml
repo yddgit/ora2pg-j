@@ -50,6 +50,8 @@
 	<!-- Common variables -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<main.class.name>net.darold.ora2pg.Main</main.class.name>
 		<ora2pg.config.file>ora2pg.properties</ora2pg.config.file>
 		<log4j.config.file>log4j.properties</log4j.config.file>
