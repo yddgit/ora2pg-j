@@ -1,8 +1,5 @@
 package net.darold.ora2pg;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
-
 import net.darold.ora2pg.action.Ora2PgAction;
 import net.darold.ora2pg.action.implement.CreateProjectAction;
 import net.darold.ora2pg.action.implement.FileConfAction;
@@ -13,8 +10,25 @@ import net.darold.ora2pg.action.implement.TempDirAction;
 import net.darold.ora2pg.config.Config;
 import net.darold.ora2pg.config.ConfigManager;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
+
 public class Main {
 	private static final Logger logger = Logger.getLogger(Main.class);
+	
+	/*
+	 * Database URL:
+	 * 
+	 * jdbc:oracle:thin:@hostname:port:dbname
+	 * jdbc:mysql://hostname:port/dbname?useUnicode=true&characterEncoding=UTF8
+	 * jdbc:postgresql://hostname:port/dbname
+	 * 
+	 * Database Driver:
+	 * 
+	 * oracle.jdbc.OracleDriver
+	 * com.mysql.jdbc.Driver
+	 * org.postgresql.Driver
+	 */
 
 	public static void main(String[] args) {
 
